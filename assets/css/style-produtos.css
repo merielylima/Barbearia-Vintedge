@@ -1,0 +1,89 @@
+body{
+    font-family: 'Teko', sans-serif;
+    background-color: #1b1d1c;
+}
+header{
+    background: url(imagens/beneficios.jpg); /*colocando uma imagem como plano de fundo */
+    background-size: 100%;
+    padding: 20px 0;
+}
+.caixa{
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+}
+nav{
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+
+nav li{
+    display: inline;
+    margin: 0 0 0 15px;
+}
+nav a{
+    text-transform: uppercase;
+    color:white;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+nav a:hover{ /*quando mouse estiver em cima de um menu de navegação*/
+    color: #b9841a;
+
+}
+.produtos{
+    color: white;
+    width: 980px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+.produtos li {
+    display: inline-block;
+    text-align: center;
+    width: 29%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 2px solid white;  /*Uma borda solida, com 3 pixels de largura, entre o padding e a margin */
+    border-radius: 10px;  /* Arrtedondar os cantos*/
+
+}
+.produtos li:hover{ /*quando mouse estiver em cima da borda dos produtos*/
+    border-color: #b9841a;
+    
+}
+.produtos li:active{ /*quando mouse estiver sendo pressionado em cima dos produtos*/
+    border-color:tomato;
+}
+.produtos li:hover h2{ /*quando mouse estiver em cima do texto(h2), muda o tamanho da fonte */
+    font-size: 32px;
+}
+.produtos h2{
+    font-size: 30px;
+    font-weight: bold;
+    
+}
+.produto-descricao{
+    font-size: 17px;
+
+}
+.produto-preco{
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+footer{
+    text-align: center;
+    background: url(imagens/bg.jpg); /*colocando uma imagem como plano de fundo */
+    padding: 40px 0; /* alinhamento interno de 40px pra cima/baixo e 0 pros lados*/
+
+}
+.copyright{
+    color: white;
+    font-size: 15px;
+    padding-top: 20px;
+}
