@@ -1,44 +1,18 @@
-body{
-    font-family: 'Teko', sans-serif;
-    background-color: #1b1d1c;
-}
-header{
-    background: url(imagens/beneficios.jpg); /*colocando uma imagem como plano de fundo */
-    background-size: 100%;
-    padding: 20px 0;
-}
-.caixa{
-    position: relative;
-    width: 940px;
-    margin: 0 auto;
-}
-nav{
-    position: absolute;
-    top: 110px;
-    right: 0;
-}
-
-nav li{
-    display: inline;
-    margin: 0 0 0 15px;
-}
-nav a{
-    text-transform: uppercase;
-    color:white;
-    font-weight: bold;
-    font-size: 22px;
-    text-decoration: none;
-}
-
-nav a:hover{ /*quando mouse estiver em cima de um menu de navegação*/
-    color: #b9841a;
-
+.container-produtos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: ;
 }
 .produtos{
-    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     width: 980px;
+    padding: 2.5rem 0;
+    flex-wrap: wrap;
     margin: 0 auto;
-    padding: 50px 0;
 }
 .produtos li {
     display: inline-block;
@@ -51,6 +25,9 @@ nav a:hover{ /*quando mouse estiver em cima de um menu de navegação*/
     border: 2px solid white;  /*Uma borda solida, com 3 pixels de largura, entre o padding e a margin */
     border-radius: 10px;  /* Arrtedondar os cantos*/
 
+}
+.produtos .prod-img{
+    width: 100%;
 }
 .produtos li:hover{ /*quando mouse estiver em cima da borda dos produtos*/
     border-color: #b9841a;
@@ -76,14 +53,24 @@ nav a:hover{ /*quando mouse estiver em cima de um menu de navegação*/
     font-weight: bold;
     margin-top: 10px;
 }
-footer{
-    text-align: center;
-    background: url(imagens/bg.jpg); /*colocando uma imagem como plano de fundo */
-    padding: 40px 0; /* alinhamento interno de 40px pra cima/baixo e 0 pros lados*/
-
+.prod-title{
+    height: 40px;
 }
-.copyright{
-    color: white;
-    font-size: 15px;
-    padding-top: 20px;
+
+@media screen and (max-width:910px){
+    .produtos{
+        flex-direction: column;
+        width: auto;
+    }
+    .container-produtos{
+        padding-inline: 1rem;
+        height: auto;
+    }
+    .produtos li{
+        width: 100%;
+        margin: 1rem 0;
+    }
+    .produtos .prod-img {
+        width: auto;
+    }
 }
