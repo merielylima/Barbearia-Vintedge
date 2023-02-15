@@ -9,3 +9,4 @@ Além disso, criei um nome fictício para a barbearia, agora chamada de Barbeari
 
 Acesse o link do site: https://merielylima.github.io/Barbearia-Vintedge/
 
+  [![piano-image](https://github.com/merielylima/Barbearia-Vintedge/blob/main/assets/img/Template.png)](https://merielylima.github.io/Barbearia-Vintedge/)
